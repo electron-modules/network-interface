@@ -1,0 +1,10 @@
+.DS_Store
+node_modules
+npm-debug.log
+.idea/*
+Thumbs.db
+.nyc_output
+build/
+*.gz
+*.sw*
+*.un~
