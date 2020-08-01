@@ -12,6 +12,8 @@
     "url": "git://github.com/xudafeng/network-interface.git"
   },
   "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^3.0.0"
   },
   "devDependencies": {
     "eslint": "*",
@@ -22,6 +24,7 @@
     "nyc": "*"
   },
   "scripts": {
+    "rebuild": "node-gyp rebuild",
     "test": "nyc --reporter=lcov --reporter=text mocha",
     "lint": "eslint . --fix",
     "contributor": "git-contributor"
@@ -31,5 +34,6 @@
       "pre-commit": "npm run lint"
     }
   },
+  "gypfile": true,
   "license": "MIT"
 }

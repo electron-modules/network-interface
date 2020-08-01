@@ -17,13 +17,18 @@
 [download-image]: https://img.shields.io/npm/dm/network-interface.svg?style=flat-square
 [download-url]: https://npmjs.org/package/network-interface
 
-> network-interface
+> network interface
 
 ## Installment
 
 ```bash
 $ npm i network-interface --save-dev
 ```
+
+https://docs.microsoft.com/en-us/windows/win32/api/netlistmgr/nf-netlistmgr-inetworklistmanager-get_isconnectedtointernet
+
+https://docs.microsoft.com/en-us/windows/win32/api/wlanapi/nf-wlanapi-wlanregisternotification
+
 
 ## License
 
