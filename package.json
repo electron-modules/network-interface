@@ -24,7 +24,9 @@
     "nyc": "*"
   },
   "scripts": {
-    "rebuild": "node-gyp rebuild",
+    "build:debug": "node-gyp configure && node-gyp build --debug",
+    "build:release": "node-gyp configure && node-gyp build",
+    "clean": "node-gyp clean",
     "test": "nyc --reporter=lcov --reporter=text mocha",
     "lint": "eslint . --fix",
     "contributor": "git-contributor"
