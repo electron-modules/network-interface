@@ -2,7 +2,7 @@
 
 const assert = require('assert');
 
-const network-interface = require('..');
+const networkInterface = require('..');
 
 describe('test', () => {
   it('should be ok', () => {

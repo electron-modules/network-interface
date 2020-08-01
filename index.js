@@ -1,3 +1,3 @@
 'use strict';
 
-module.exports = require('./lib/network-interface');
+module.exports = require('./build/Debug/hello.node');
