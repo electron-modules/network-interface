@@ -1,7 +1,7 @@
 {
   "name": "network-interface",
   "version": "0.1.0",
-  "description": "network-interface",
+  "description": "network interface",
   "keywords": [
     "network",
     "interface"
@@ -18,7 +18,7 @@
   "devDependencies": {
     "eslint": "^7.6.0",
     "eslint-plugin-mocha": "^7.0.1",
-    "git-contributor": "^1.0.10",
+    "git-contributor": "1",
     "husky": "^4.2.5",
     "mocha": "^8.1.0",
     "nyc": "^15.1.0"
@@ -36,6 +36,5 @@
       "pre-commit": "npm run lint"
     }
   },
-  "gypfile": true,
   "license": "MIT"
 }
