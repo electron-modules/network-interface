@@ -13,12 +13,11 @@
   },
   "dependencies": {
     "bindings": "^1.5.0",
-    "napi-thread-safe-callback": "^0.0.6",
     "node-addon-api": "^3.0.0"
   },
   "devDependencies": {
     "eslint": "^7.6.0",
-    "eslint-plugin-mocha": "^4.11.0",
+    "eslint-plugin-mocha": "^7.0.1",
     "git-contributor": "^1.0.10",
     "husky": "^4.2.5",
     "mocha": "^8.1.0",
