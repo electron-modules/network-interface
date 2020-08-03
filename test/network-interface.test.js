@@ -4,13 +4,15 @@ const assert = require('assert');
 
 const networkInterface = require('..');
 
-describe('test', function() {
-  this.timeout(1000000);
-  it('should be ok', (done) => {
-    networkInterface.addEventLisener((e) => {
-      console.log('-------------->');
-      console.log(e);
+describe('./test/network-interface.test.js', function() {
+  this.timeout(40 * 1000);
+  describe('addEventListener()', () => {
+    it('should be ok', (done) => {
+      networkInterface.addEventListener('wlan-status-changed', (e) => {
+        console.log('event fired: wlan-status-changed');
+        console.log(e);
+      });
+      setTimeout(() => { done(); }, 30 * 1000);
     });
-    setTimeout(() => { done(); }, 60 * 1000);
   });
 });
