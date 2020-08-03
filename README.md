@@ -17,25 +17,31 @@
 [download-image]: https://img.shields.io/npm/dm/network-interface.svg?style=flat-square
 [download-url]: https://npmjs.org/package/network-interface
 
-> network interface
+> Operating system network-related library for Node.js is used to obtain hardware status and network environment changes, etc.
+
+## Introduction
+
+The goal of this project is to provide a library that can be used by Node.js so that we can accurately obtain the current computer network status and support the integrated use of frameworks like Electron. At this stage, only some APIs of [netlistmgr](https://docs.microsoft.com/en-us/windows/win32/api/wlanapi/nf-wlanapi-wlanregisternotification) and [wlanapi](https://docs.microsoft.com/en-us/windows/win32/api/netlistmgr/nf-netlistmgr-inetworklistmanager-get_isconnectedtointernet) are wrapped.
 
 ## Installment
 
 ```bash
-$ npm i network-interface --save-dev
+$ npm i network-interface --save
 ```
-
-https://docs.microsoft.com/en-us/windows/win32/api/netlistmgr/nf-netlistmgr-inetworklistmanager-get_isconnectedtointernet
-
-https://docs.microsoft.com/en-us/windows/win32/api/wlanapi/nf-wlanapi-wlanregisternotification
 
 ## Usage
 
 ```javascript
-networkInterface.addEventLisener('wlan-changed' (e) => {
+const networkInterface = require('network-interface');
+
+networkInterface.addEventListener('wlan-changed' (e) => {
   console.log(e);
 });
 ```
+
+## Future plan
+
+Only supports windows platform? Because I don’t need to solve the problems of other platforms, others may be supported in the future, and hope you can give some contributions.
 
 ## License
 

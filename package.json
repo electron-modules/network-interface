@@ -1,10 +1,16 @@
 {
   "name": "network-interface",
   "version": "0.1.0",
-  "description": "network interface",
+  "description": "Operating system network-related library for Node.js is used to obtain hardware status and network environment changes, etc.",
   "keywords": [
     "network",
-    "interface"
+    "interface",
+    "binding",
+    "napi",
+    "wlanapi",
+    "wlanregisternotification",
+    "netlistmgr",
+    "inetworklistmanager"
   ],
   "main": "index.js",
   "repository": {

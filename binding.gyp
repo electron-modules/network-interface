@@ -1,9 +1,9 @@
 {
   "targets": [
     {
-      "target_name": "hello",
+      "target_name": "network-interface",
       "sources": [
-        "./src/addon.cpp"
+        "./src/main.cpp"
       ],
       "include_dirs": [
         "<!@(node -p \"require('node-addon-api').include\")"
