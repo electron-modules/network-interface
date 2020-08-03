@@ -29,6 +29,13 @@ https://docs.microsoft.com/en-us/windows/win32/api/netlistmgr/nf-netlistmgr-inet
 
 https://docs.microsoft.com/en-us/windows/win32/api/wlanapi/nf-wlanapi-wlanregisternotification
 
+## Usage
+
+```javascript
+networkInterface.addEventLisener('wlan-changed' (e) => {
+  console.log(e);
+});
+```
 
 ## License
 
