@@ -13,15 +13,16 @@
   },
   "dependencies": {
     "bindings": "^1.5.0",
+    "napi-thread-safe-callback": "^0.0.6",
     "node-addon-api": "^3.0.0"
   },
   "devDependencies": {
-    "eslint": "*",
+    "eslint": "^7.6.0",
     "eslint-plugin-mocha": "^4.11.0",
-    "git-contributor": "*",
-    "husky": "*",
-    "mocha": "*",
-    "nyc": "*"
+    "git-contributor": "^1.0.10",
+    "husky": "^4.2.5",
+    "mocha": "^8.1.0",
+    "nyc": "^15.1.0"
   },
   "scripts": {
     "build:debug": "node-gyp configure && node-gyp build --debug",
