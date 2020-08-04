@@ -12,7 +12,7 @@ describe('./test/network-interface.test.js', function() {
         console.log('event fired: wlan-status-changed');
         console.log(e);
       });
-      setTimeout(() => { done(); }, 30 * 1000);
+      setTimeout(done, 30 * 1000)
     });
   });
 });

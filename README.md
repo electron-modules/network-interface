@@ -31,7 +31,7 @@ $ npm i network-interface --save
 ```javascript
 const networkInterface = require('network-interface');
 
-networkInterface.addEventListener('wlan-status-changed' (e) => {
+networkInterface.addEventListener('wlan-status-changed', (e) => {
   console.log(e);
 });
 ```
