@@ -13,8 +13,6 @@ install:
   - npm i --msvs_version=%GYP_MSVS_VERSION%
 
 test_script:
-  - node --version
-  - npm --version
   - npm run build:release
   - npm run test
 
