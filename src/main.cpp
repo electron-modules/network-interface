@@ -5,7 +5,7 @@
 #include <iostream>
 #include "napi-thread-safe-callback.hpp"
 
-#pragma comment(lib, "wlanapi.lib");
+#pragma comment(lib, "wlanapi.lib")
 
 static std::shared_ptr<ThreadSafeCallback> notifyCallbackForJsFn = nullptr;
 
@@ -13,30 +13,31 @@ void OnNotificationCallback(PWLAN_NOTIFICATION_DATA data, PVOID context) {
   if (data != NULL && data->NotificationSource == WLAN_NOTIFICATION_SOURCE_ACM) {
     switch(data->NotificationCode) {
       case wlan_notification_acm_connection_complete: {
-        char tArg0[50] = "wlan_notification_acm_connection_complete";
+        char *arg0 = "wlan_notification_acm_connection_complete";
+        // char tArg0[50] = "wlan_notification_acm_connection_complete";
 
         // safe thread call
-        notifyCallbackForJsFn -> call([tArg0](Napi::Env env, std::vector<napi_value>& args) {
+        notifyCallbackForJsFn -> call([arg0](Napi::Env env, std::vector<napi_value>& args) {
           // will run in main thread
-          args = { Napi::String::New(env, tArg0) };
+          args = { Napi::String::New(env, arg0) };
         });
       } break;
       case wlan_notification_acm_disconnected: {
-        char tArg0[50] = "wlan_notification_acm_disconnected";
+        char *arg0 = "wlan_notification_acm_disconnected";
 
         // safe thread call
-        notifyCallbackForJsFn -> call([tArg0](Napi::Env env, std::vector<napi_value>& args) {
+        notifyCallbackForJsFn -> call([arg0](Napi::Env env, std::vector<napi_value>& args) {
           // will run in main thread
-          args = { Napi::String::New(env, tArg0) };
+          args = { Napi::String::New(env, arg0) };
         });
       } break;
       case wlan_notification_acm_scan_complete: {
-        char tArg0[50] = "wlan_notification_acm_scan_complete";
+        char *arg0 = "wlan_notification_acm_scan_complete";
 
         // safe thread call
-        notifyCallbackForJsFn -> call([tArg0](Napi::Env env, std::vector<napi_value>& args) {
+        notifyCallbackForJsFn -> call([arg0](Napi::Env env, std::vector<napi_value>& args) {
           // will run in main thread
-          args = { Napi::String::New(env, tArg0) };
+          args = { Napi::String::New(env, arg0) };
         });
       } break;
     }   

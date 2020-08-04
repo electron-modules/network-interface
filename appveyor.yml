@@ -10,14 +10,13 @@ platform:
 
 install:
   - ps: Install-Product node $env:nodejs_version
-  - npm install --msvs_version=%GYP_MSVS_VERSION%
+  - npm i --msvs_version=%GYP_MSVS_VERSION%
 
 test_script:
   - node --version
   - npm --version
-  - npm i
   - npm run build:release
-  - npm test
+  - npm run test
 
 build: off
 
