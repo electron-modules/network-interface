@@ -1,0 +1,21 @@
+  
+environment:
+  matrix:
+    - GYP_MSVS_VERSION: 2015
+      nodejs_version: "12"
+
+platform:
+  - x86
+  - x64
+
+install:
+  - ps: Install-Product node $env:nodejs_version
+  - npm i --msvs_version=%GYP_MSVS_VERSION%
+
+test_script:
+  - npm run build:release
+  - npm run test
+
+build: off
+
+version: "{build}"

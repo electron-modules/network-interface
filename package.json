@@ -1,27 +1,43 @@
 {
   "name": "network-interface",
-  "version": "0.1.0",
-  "description": "network-interface",
+  "version": "0.1.5",
+  "description": "Operating system network-related library for Node.js is used to obtain hardware status and network environment changes, etc.",
   "keywords": [
     "network",
-    "interface"
+    "interface",
+    "binding",
+    "napi",
+    "wlanapi",
+    "wlanregisternotification",
+    "netlistmgr",
+    "inetworklistmanager"
   ],
   "main": "index.js",
+  "files": [
+    "index.js",
+    "build/Release/*.node",
+    "src"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/xudafeng/network-interface.git"
   },
   "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^3.0.0"
   },
   "devDependencies": {
-    "eslint": "*",
-    "eslint-plugin-mocha": "^4.11.0",
-    "git-contributor": "*",
-    "husky": "*",
-    "mocha": "*",
-    "nyc": "*"
+    "eslint": "^7.6.0",
+    "eslint-plugin-mocha": "^7.0.1",
+    "git-contributor": "1",
+    "husky": "^4.2.5",
+    "mocha": "^8.1.0",
+    "nyc": "^15.1.0"
   },
   "scripts": {
+    "build:debug": "node-gyp configure && node-gyp build --debug",
+    "build:release": "node-gyp configure && node-gyp build",
+    "clean": "node-gyp clean",
     "test": "nyc --reporter=lcov --reporter=text mocha",
     "lint": "eslint . --fix",
     "contributor": "git-contributor"

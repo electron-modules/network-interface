@@ -1,3 +1,5 @@
 'use strict';
 
-module.exports = require('./lib/network-interface');
+const pkg = require('./package');
+
+module.exports = require('bindings')(pkg.name);
