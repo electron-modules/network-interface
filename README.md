@@ -1,5 +1,7 @@
 # network-interface
 
+---
+
 [![NPM version][npm-image]][npm-url]
 [![build status][build-image]][build-url]
 [![node version][node-image]][node-url]
@@ -20,6 +22,18 @@
 
 The goal of this project is to provide a library that can be used by Node.js so that we can accurately obtain the current computer network status and support the integrated use of frameworks like Electron. At this stage, only some APIs of [wlanapi](https://docs.microsoft.com/en-us/windows/win32/api/wlanapi/nf-wlanapi-wlanregisternotification) and [netlistmgr](https://docs.microsoft.com/en-us/windows/win32/api/netlistmgr/nn-netlistmgr-inetworkconnectionevents) are wrapped.
 
+### More cases
+
+<p align="center">
+  <img
+    src="./images/post-pwa-paradite.png"
+    width="400"
+  />
+</p>
+
+0. https://paradite.com/2016/09/28/my-experience-building-progressive-web-app-pwa
+1. https://github.com/electron/electron/issues/11290
+
 ## Installment
 
 ```bash
@@ -31,8 +45,13 @@ $ npm i network-interface --save
 ```javascript
 const networkInterface = require('network-interface');
 
-networkInterface.addEventListener('wlan-status-changed', (e) => {
-  console.log(e);
+networkInterface.addEventListener('wlan-status-changed', (error, data) => {
+  if (error) {
+    throw error;
+    return;
+  }
+  console.log('event fired: wlan-status-changed');
+  console.log(data);
 });
 ```
 
