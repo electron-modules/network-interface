@@ -25,10 +25,7 @@ The goal of this project is to provide a library that can be used by Node.js so 
 ### More cases
 
 <p align="center">
-  <img
-    src="./images/post-pwa-paradite.png"
-    width="400"
-  />
+  <img src="./images/post-pwa-paradite.png" width="400" />
 </p>
 
 0. https://paradite.com/2016/09/28/my-experience-building-progressive-web-app-pwa
@@ -41,6 +38,10 @@ $ npm i network-interface --save
 ```
 
 ## Usage
+
+<p align="center">
+  <img src="./images/demo.gif" width="400" />
+</p>
 
 ```javascript
 const networkInterface = require('network-interface');

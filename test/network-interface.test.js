@@ -18,17 +18,17 @@ describe('./test/network-interface.test.js', function() {
   });
 
   describe('addEventListener()', () => {
-    it('should be ok', (done) => {
-      const networkInterface = require(binaryFilePath);
-      networkInterface.addEventListener('wlan-status-changed', (error, data) => {
-        if (error) {
-          throw error;
-          return;
-        }
-        console.log('event fired: wlan-status-changed');
-        console.log(data);
-      });
-      setTimeout(done, 30 * 1000)
-    });
+    // it('should be ok', (done) => {
+    //   const networkInterface = require(binaryFilePath);
+    //   networkInterface.addEventListener('wlan-status-changed', (error, data) => {
+    //     if (error) {
+    //       throw error;
+    //       return;
+    //     }
+    //     console.log('event fired: wlan-status-changed');
+    //     console.log(data);
+    //   });
+    //   setTimeout(done, 30 * 1000)
+    // });
   });
 });
