@@ -2,11 +2,14 @@
 
 ---
 
+[![electron modules][electron-modules-image]][electron-modules-url]
 [![NPM version][npm-image]][npm-url]
 [![build status][build-image]][build-url]
 [![node version][node-image]][node-url]
 [![npm download][download-image]][download-url]
 
+[electron-modules-image]: https://img.shields.io/badge/electron-modules-blue.svg
+[electron-modules-url]: https://github.com/xudafeng/electron-modules
 [npm-image]: https://img.shields.io/npm/v/network-interface.svg
 [npm-url]: https://npmjs.org/package/network-interface
 [build-image]: https://img.shields.io/appveyor/build/xudafeng/network-interface.svg?logo=appveyor
