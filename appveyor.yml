@@ -1,4 +1,3 @@
-  
 environment:
   matrix:
     - GYP_MSVS_VERSION: 2015

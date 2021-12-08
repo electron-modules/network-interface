@@ -9,11 +9,11 @@
 [![npm download][download-image]][download-url]
 
 [electron-modules-image]: https://img.shields.io/badge/electron-modules-blue.svg
-[electron-modules-url]: https://github.com/xudafeng/electron-modules
+[electron-modules-url]: https://github.com/electron-modules/electron-modules
 [npm-image]: https://img.shields.io/npm/v/network-interface.svg
 [npm-url]: https://npmjs.org/package/network-interface
-[build-image]: https://img.shields.io/appveyor/build/xudafeng/network-interface.svg?logo=appveyor
-[build-url]: https://ci.appveyor.com/project/xudafeng/network-interface
+[build-image]: https://img.shields.io/appveyor/build/electron-modules/network-interface.svg?logo=appveyor
+[build-url]: https://ci.appveyor.com/project/electron-modules/network-interface
 [node-image]: https://img.shields.io/badge/node.js-%3E=_8-green.svg
 [node-url]: http://nodejs.org/download/
 [download-image]: https://img.shields.io/npm/dm/network-interface.svg
@@ -62,6 +62,18 @@ networkInterface.addEventListener('wlan-status-changed', (error, data) => {
 ## Future plan
 
 Only supports windows platform? Because I don’t need to solve the problems of other platforms, others may be supported in the future, and hope you can give some contributions.
+
+<!-- GITCONTRIBUTOR_START -->
+
+## Contributors
+
+|[<img src="https://avatars.githubusercontent.com/u/1011681?v=4" width="100px;"/><br/><sub><b>xudafeng</b></sub>](https://github.com/xudafeng)<br/>|
+| :---: |
+
+
+This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto updated at `Wed Dec 08 2021 11:38:44 GMT+0800`.
+
+<!-- GITCONTRIBUTOR_END -->
 
 ## License
 
