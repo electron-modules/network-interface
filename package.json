@@ -1,6 +1,6 @@
 {
   "name": "network-interface",
-  "version": "1.0.0",
+  "version": "13.0.0",
   "description": "Operating system network-related library for Node.js is used to obtain hardware status and network environment changes, etc.",
   "keywords": [
     "network",
@@ -20,7 +20,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/xudafeng/network-interface.git"
+    "url": "git://github.com/electron-modules/network-interface.git"
   },
   "dependencies": {
     "bindings": "^1.5.0",
