@@ -1,6 +1,6 @@
 {
   "name": "network-interface",
-  "version": "13.0.0",
+  "version": "17.0.0",
   "description": "Operating system network-related library for Node.js is used to obtain hardware status and network environment changes, etc.",
   "keywords": [
     "network",
@@ -27,7 +27,7 @@
     "node-addon-api": "^3.0.0"
   },
   "devDependencies": {
-    "eslint": "^7.6.0",
+    "eslint": "7",
     "eslint-plugin-mocha": "^7.0.1",
     "git-contributor": "1",
     "husky": "^4.2.5",
