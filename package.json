@@ -1,6 +1,6 @@
 {
   "name": "network-interface",
-  "version": "17.0.0",
+  "version": "18.0.0",
   "description": "Operating system network-related library for Node.js is used to obtain hardware status and network environment changes, etc.",
   "keywords": [
     "network",
